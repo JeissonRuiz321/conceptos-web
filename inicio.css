@@ -1,0 +1,143 @@
+ body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#card-count {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+#buscador {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 16px;
+  border: 2px solid #0077b6;
+  border-radius: 8px;
+}
+
+.theme-button {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #0077b6;
+  margin-top: 0;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.extra-info {
+  max-height: 0;
+  min-height: 60px;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 12px;
+  background-color: #e0f7fa;
+  border-left: 4px solid #00b4d8;
+  border-radius: 8px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 180, 216, 0.2);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.extra-info.visible {
+  max-height: 200px;
+  padding: 12px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
+
+/* Modo oscuro */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+}
+
+.dark-mode .card {
+  background-color: #2c2c2c;
+  color: #f4f4f4;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .card h2 {
+  color: #90e0ef;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+.card-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+

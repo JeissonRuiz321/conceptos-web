@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conceptos Web</title>
+  <link rel="stylesheet" href="inicio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="inicio.js" defer></script>
+</head>
+<body>
+  <h1>Conceptos clave de desarrollo web</h1>
+
+  <input type="text" id="buscador" placeholder="Buscar concepto..." oninput="filtrarTarjetas()" />
+
+  <p id="card-count"></p>
+  <button class="theme-button" onclick="toggleTheme()">Cambiar tema</button>
+
+  <div class="card-container">
+    <!-- Tarjeta 1 -->
+    <div class="card">
+  <p class="contador">Visto: 0 veces</p>
+  <h2>Conceptos clave de desarrollo web</h2>
+  <p>El desarrollo web implica tareas como diseño visual, usabilidad, codificación, optimización móvil y gestión de bases de datos.</p>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Git</li>
+    <li>GitHub</li>
+  </ul>
+  <button onclick="toggleInfo(this)">Ver más</button>
+  <div class="extra-info">
+    <p>Incluye la creación de interfaces interactivas, la optimización para dispositivos móviles y la implementación de funcionalidades específicas.</p>
+  </div>
+</div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+      <p class="contador">Visto: 0 veces</p>
+      <h2>Arquitectura Cliente-Servidor</h2>
+      <p>Modelo que divide tareas entre servidores (proveedores) y clientes (solicitantes).</p>
+      <ul>
+        <li>Servidor web</li>
+        <li>Bases de datos</li>
+        <li>Lenguajes de programación</li>
+        <li>Framework</li>
+        <li>Librerías</li>
+      </ul>
+      <button onclick="toggleInfo(this)">Ver más</button>
+      <div class="extra-info">
+        <p>Permite separar la lógica del cliente y del servidor, facilitando el mantenimiento.</p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card">
+      <p class="contador">Visto: 0 veces</p>
+      <h2>Diseño centrado en el usuario</h2>
+      <p>El usuario es el eje del diseño web, priorizando sus necesidades sobre las capacidades técnicas.</p>
+      <ul>
+        <li>Diseño de interfaz</li>
+        <li>Diseño de experiencia</li>
+        <li>Diseño visual</li>
+      </ul>
+      <button onclick="toggleInfo(this)">Ver más</button>
+      <div class="extra-info">
+        <p>Mejora la usabilidad y la satisfacción del usuario.</p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="card">
+      <p class="contador">Visto: 0 veces</p>
+      <h2>Investigación en el entorno</h2>
+      <p>Identifica factores internos y externos que afectan el éxito de un proyecto.</p>
+      <ul>
+        <li>Análisis de requisitos</li>
+        <li>Diseño de prototipo</li>
+        <li>Evaluación de solución</li>
+      </ul>
+      <button onclick="toggleInfo(this)">Ver más</button>
+      <div class="extra-info">
+        <p>Permite diseñar soluciones adaptadas al entorno técnico y social.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
